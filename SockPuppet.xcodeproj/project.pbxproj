@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DED848CE22D694E600FA16AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DED848CD22D694E600FA16AD /* AppDelegate.m */; };
+		DED848D122D694E600FA16AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED848D022D694E600FA16AD /* ViewController.m */; };
+		DED848D422D694E600FA16AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED848D222D694E600FA16AD /* Main.storyboard */; };
+		DED848D622D694E700FA16AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED848D522D694E700FA16AD /* Assets.xcassets */; };
+		DED848D922D694E700FA16AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED848D722D694E700FA16AD /* LaunchScreen.storyboard */; };
+		DED8490322D6953100FA16AD /* kernel_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = DED848E322D6952F00FA16AD /* kernel_memory.c */; };
+		DED8490422D6953100FA16AD /* kernel_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = DED848E722D6952F00FA16AD /* kernel_alloc.c */; };
+		DED8490522D6953100FA16AD /* util.cc in Sources */ = {isa = PBXBuildFile; fileRef = DED848E822D6952F00FA16AD /* util.cc */; };
+		DED8490622D6953100FA16AD /* iosurface.c in Sources */ = {isa = PBXBuildFile; fileRef = DED848E922D6952F00FA16AD /* iosurface.c */; };
+		DED8490722D6953100FA16AD /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = DED848EA22D6952F00FA16AD /* log.c */; };
+		DED8490822D6953100FA16AD /* pipe.cc in Sources */ = {isa = PBXBuildFile; fileRef = DED848ED22D6952F00FA16AD /* pipe.cc */; };
+		DED8490922D6953100FA16AD /* port.cc in Sources */ = {isa = PBXBuildFile; fileRef = DED848EF22D6952F00FA16AD /* port.cc */; };
+		DED8490A22D6953100FA16AD /* exploit.cc in Sources */ = {isa = PBXBuildFile; fileRef = DED848F022D6952F00FA16AD /* exploit.cc */; };
+		DED8490B22D6953100FA16AD /* platform.c in Sources */ = {isa = PBXBuildFile; fileRef = DED848F122D6953000FA16AD /* platform.c */; };
+		DED8490C22D6953100FA16AD /* dangling_options.cc in Sources */ = {isa = PBXBuildFile; fileRef = DED848F822D6953000FA16AD /* dangling_options.cc */; };
+		DED8490D22D6953100FA16AD /* parameters.c in Sources */ = {isa = PBXBuildFile; fileRef = DED848FA22D6953000FA16AD /* parameters.c */; };
+		DED8490E22D6953100FA16AD /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = DED848FC22D6953000FA16AD /* main.mm */; };
+		DED8490F22D6953100FA16AD /* stage1.cc in Sources */ = {isa = PBXBuildFile; fileRef = DED848FD22D6953000FA16AD /* stage1.cc */; };
+		DED8491022D6953100FA16AD /* spray.cc in Sources */ = {isa = PBXBuildFile; fileRef = DED848FF22D6953000FA16AD /* spray.cc */; };
+		DED8491122D6953100FA16AD /* platform_match.c in Sources */ = {isa = PBXBuildFile; fileRef = DED8490022D6953000FA16AD /* platform_match.c */; };
+		DED8491422D6956900FA16AD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED8491322D6956900FA16AD /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DED848C922D694E600FA16AD /* SockPuppet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SockPuppet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED848CC22D694E600FA16AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DED848CD22D694E600FA16AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DED848CF22D694E600FA16AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DED848D022D694E600FA16AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DED848D322D694E600FA16AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DED848D522D694E700FA16AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DED848D822D694E700FA16AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DED848DA22D694E700FA16AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED848E222D6952F00FA16AD /* mach_vm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mach_vm.h; path = src/mach_vm.h; sourceTree = "<group>"; };
+		DED848E322D6952F00FA16AD /* kernel_memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kernel_memory.c; path = src/kernel_memory.c; sourceTree = "<group>"; };
+		DED848E422D6952F00FA16AD /* OSSerializeBinary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSSerializeBinary.h; path = src/OSSerializeBinary.h; sourceTree = "<group>"; };
+		DED848E522D6952F00FA16AD /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = src/util.h; sourceTree = "<group>"; };
+		DED848E622D6952F00FA16AD /* spray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = spray.h; path = src/spray.h; sourceTree = "<group>"; };
+		DED848E722D6952F00FA16AD /* kernel_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kernel_alloc.c; path = src/kernel_alloc.c; sourceTree = "<group>"; };
+		DED848E822D6952F00FA16AD /* util.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cc; path = src/util.cc; sourceTree = "<group>"; };
+		DED848E922D6952F00FA16AD /* iosurface.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = iosurface.c; path = src/iosurface.c; sourceTree = "<group>"; };
+		DED848EA22D6952F00FA16AD /* log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = log.c; path = src/log.c; sourceTree = "<group>"; };
+		DED848EB22D6952F00FA16AD /* iosurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iosurface.h; path = src/iosurface.h; sourceTree = "<group>"; };
+		DED848EC22D6952F00FA16AD /* kernel_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kernel_memory.h; path = src/kernel_memory.h; sourceTree = "<group>"; };
+		DED848ED22D6952F00FA16AD /* pipe.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pipe.cc; path = src/pipe.cc; sourceTree = "<group>"; };
+		DED848EE22D6952F00FA16AD /* exploit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = exploit.h; path = src/exploit.h; sourceTree = "<group>"; };
+		DED848EF22D6952F00FA16AD /* port.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = port.cc; path = src/port.cc; sourceTree = "<group>"; };
+		DED848F022D6952F00FA16AD /* exploit.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = exploit.cc; path = src/exploit.cc; sourceTree = "<group>"; };
+		DED848F122D6953000FA16AD /* platform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = platform.c; path = src/platform.c; sourceTree = "<group>"; };
+		DED848F222D6953000FA16AD /* dangling_options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dangling_options.h; path = src/dangling_options.h; sourceTree = "<group>"; };
+		DED848F322D6953000FA16AD /* pipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pipe.h; path = src/pipe.h; sourceTree = "<group>"; };
+		DED848F422D6953000FA16AD /* stage1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stage1.h; path = src/stage1.h; sourceTree = "<group>"; };
+		DED848F522D6953000FA16AD /* port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = port.h; path = src/port.h; sourceTree = "<group>"; };
+		DED848F622D6953000FA16AD /* ipc_port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ipc_port.h; path = src/ipc_port.h; sourceTree = "<group>"; };
+		DED848F722D6953000FA16AD /* parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parameters.h; path = src/parameters.h; sourceTree = "<group>"; };
+		DED848F822D6953000FA16AD /* dangling_options.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dangling_options.cc; path = src/dangling_options.cc; sourceTree = "<group>"; };
+		DED848F922D6953000FA16AD /* IOKitLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOKitLib.h; path = src/IOKitLib.h; sourceTree = "<group>"; };
+		DED848FA22D6953000FA16AD /* parameters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parameters.c; path = src/parameters.c; sourceTree = "<group>"; };
+		DED848FB22D6953000FA16AD /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = log.h; path = src/log.h; sourceTree = "<group>"; };
+		DED848FC22D6953000FA16AD /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = src/main.mm; sourceTree = "<group>"; };
+		DED848FD22D6953000FA16AD /* stage1.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stage1.cc; path = src/stage1.cc; sourceTree = "<group>"; };
+		DED848FE22D6953000FA16AD /* kernel_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kernel_alloc.h; path = src/kernel_alloc.h; sourceTree = "<group>"; };
+		DED848FF22D6953000FA16AD /* spray.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = spray.cc; path = src/spray.cc; sourceTree = "<group>"; };
+		DED8490022D6953000FA16AD /* platform_match.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = platform_match.c; path = src/platform_match.c; sourceTree = "<group>"; };
+		DED8490122D6953000FA16AD /* platform_match.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform_match.h; path = src/platform_match.h; sourceTree = "<group>"; };
+		DED8490222D6953100FA16AD /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform.h; path = src/platform.h; sourceTree = "<group>"; };
+		DED8491322D6956900FA16AD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DED848C622D694E600FA16AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED8491422D6956900FA16AD /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DED848C022D694E600FA16AD = {
+			isa = PBXGroup;
+			children = (
+				DED848CB22D694E600FA16AD /* SockPuppet */,
+				DED848CA22D694E600FA16AD /* Products */,
+				DED8491222D6956900FA16AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DED848CA22D694E600FA16AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DED848C922D694E600FA16AD /* SockPuppet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DED848CB22D694E600FA16AD /* SockPuppet */ = {
+			isa = PBXGroup;
+			children = (
+				DED848CC22D694E600FA16AD /* AppDelegate.h */,
+				DED848CD22D694E600FA16AD /* AppDelegate.m */,
+				DED848CF22D694E600FA16AD /* ViewController.h */,
+				DED848D022D694E600FA16AD /* ViewController.m */,
+				DED848D222D694E600FA16AD /* Main.storyboard */,
+				DED848D522D694E700FA16AD /* Assets.xcassets */,
+				DED848D722D694E700FA16AD /* LaunchScreen.storyboard */,
+				DED848DA22D694E700FA16AD /* Info.plist */,
+				DED848F822D6953000FA16AD /* dangling_options.cc */,
+				DED848F222D6953000FA16AD /* dangling_options.h */,
+				DED848F022D6952F00FA16AD /* exploit.cc */,
+				DED848EE22D6952F00FA16AD /* exploit.h */,
+				DED848F922D6953000FA16AD /* IOKitLib.h */,
+				DED848E922D6952F00FA16AD /* iosurface.c */,
+				DED848EB22D6952F00FA16AD /* iosurface.h */,
+				DED848F622D6953000FA16AD /* ipc_port.h */,
+				DED848E722D6952F00FA16AD /* kernel_alloc.c */,
+				DED848FE22D6953000FA16AD /* kernel_alloc.h */,
+				DED848E322D6952F00FA16AD /* kernel_memory.c */,
+				DED848EC22D6952F00FA16AD /* kernel_memory.h */,
+				DED848EA22D6952F00FA16AD /* log.c */,
+				DED848FB22D6953000FA16AD /* log.h */,
+				DED848E222D6952F00FA16AD /* mach_vm.h */,
+				DED848FC22D6953000FA16AD /* main.mm */,
+				DED848E422D6952F00FA16AD /* OSSerializeBinary.h */,
+				DED848FA22D6953000FA16AD /* parameters.c */,
+				DED848F722D6953000FA16AD /* parameters.h */,
+				DED848ED22D6952F00FA16AD /* pipe.cc */,
+				DED848F322D6953000FA16AD /* pipe.h */,
+				DED8490022D6953000FA16AD /* platform_match.c */,
+				DED8490122D6953000FA16AD /* platform_match.h */,
+				DED848F122D6953000FA16AD /* platform.c */,
+				DED8490222D6953100FA16AD /* platform.h */,
+				DED848EF22D6952F00FA16AD /* port.cc */,
+				DED848F522D6953000FA16AD /* port.h */,
+				DED848FF22D6953000FA16AD /* spray.cc */,
+				DED848E622D6952F00FA16AD /* spray.h */,
+				DED848FD22D6953000FA16AD /* stage1.cc */,
+				DED848F422D6953000FA16AD /* stage1.h */,
+				DED848E822D6952F00FA16AD /* util.cc */,
+				DED848E522D6952F00FA16AD /* util.h */,
+			);
+			path = SockPuppet;
+			sourceTree = "<group>";
+		};
+		DED8491222D6956900FA16AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DED8491322D6956900FA16AD /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DED848C822D694E600FA16AD /* SockPuppet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED848DF22D694E700FA16AD /* Build configuration list for PBXNativeTarget "SockPuppet" */;
+			buildPhases = (
+				DED848C522D694E600FA16AD /* Sources */,
+				DED848C622D694E600FA16AD /* Frameworks */,
+				DED848C722D694E600FA16AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SockPuppet;
+			productName = SockPuppet;
+			productReference = DED848C922D694E600FA16AD /* SockPuppet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DED848C122D694E600FA16AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ned Williamson";
+				TargetAttributes = {
+					DED848C822D694E600FA16AD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = DED848C422D694E600FA16AD /* Build configuration list for PBXProject "SockPuppet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DED848C022D694E600FA16AD;
+			productRefGroup = DED848CA22D694E600FA16AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DED848C822D694E600FA16AD /* SockPuppet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DED848C722D694E600FA16AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED848D922D694E700FA16AD /* LaunchScreen.storyboard in Resources */,
+				DED848D622D694E700FA16AD /* Assets.xcassets in Resources */,
+				DED848D422D694E600FA16AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DED848C522D694E600FA16AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED8490722D6953100FA16AD /* log.c in Sources */,
+				DED8490422D6953100FA16AD /* kernel_alloc.c in Sources */,
+				DED8491122D6953100FA16AD /* platform_match.c in Sources */,
+				DED8490F22D6953100FA16AD /* stage1.cc in Sources */,
+				DED8490922D6953100FA16AD /* port.cc in Sources */,
+				DED848D122D694E600FA16AD /* ViewController.m in Sources */,
+				DED8490822D6953100FA16AD /* pipe.cc in Sources */,
+				DED8490322D6953100FA16AD /* kernel_memory.c in Sources */,
+				DED8490622D6953100FA16AD /* iosurface.c in Sources */,
+				DED8490522D6953100FA16AD /* util.cc in Sources */,
+				DED8490B22D6953100FA16AD /* platform.c in Sources */,
+				DED8490E22D6953100FA16AD /* main.mm in Sources */,
+				DED8490D22D6953100FA16AD /* parameters.c in Sources */,
+				DED8491022D6953100FA16AD /* spray.cc in Sources */,
+				DED848CE22D694E600FA16AD /* AppDelegate.m in Sources */,
+				DED8490C22D6953100FA16AD /* dangling_options.cc in Sources */,
+				DED8490A22D6953100FA16AD /* exploit.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DED848D222D694E600FA16AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DED848D322D694E600FA16AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DED848D722D694E700FA16AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DED848D822D694E700FA16AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DED848DD22D694E700FA16AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DED848DE22D694E700FA16AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DED848E022D694E700FA16AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CS662JMHP;
+				INFOPLIST_FILE = SockPuppet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Google.SockPuppet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DED848E122D694E700FA16AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CS662JMHP;
+				INFOPLIST_FILE = SockPuppet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Google.SockPuppet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DED848C422D694E600FA16AD /* Build configuration list for PBXProject "SockPuppet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED848DD22D694E700FA16AD /* Debug */,
+				DED848DE22D694E700FA16AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED848DF22D694E700FA16AD /* Build configuration list for PBXNativeTarget "SockPuppet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED848E022D694E700FA16AD /* Debug */,
+				DED848E122D694E700FA16AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DED848C122D694E600FA16AD /* Project object */;
+}
